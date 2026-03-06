@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-forest: #14532d;
+  --color-earth: #5f3b1a;
+  --color-beige: #f5f0e6;
+  --color-accent: #22c55e;
+}
+
+body {
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.neo-card {
+  @apply rounded-3xl border-4 border-black bg-[#fefaf2] shadow-[6px_6px_0px_0px_rgba(0,0,0,1)];
+}
+
+.neo-button {
+  @apply rounded-full border-4 border-black bg-[var(--color-accent)] px-6 py-3 text-sm font-semibold uppercase tracking-wide shadow-[0_4px_0_0_rgba(0,0,0,1)] transition-transform transition-shadow;
+}
+
+.neo-button:hover {
+  @apply -translate-y-0.5 shadow-[0_6px_0_0_rgba(0,0,0,1)];
+}
+
+.neo-tag {
+  @apply inline-flex items-center rounded-full border-2 border-black bg-[#fefaf2] px-3 py-1 text-xs font-semibold;
+}
+
